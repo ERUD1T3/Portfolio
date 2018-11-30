@@ -73,7 +73,7 @@ router.get('/users', (req, res) => {
 	})
 })
 
-router.get('/user/:id', (req, res) => {
+router.get('/users/:id', (req, res) => {
 	const query = "select * from users where id = ?";
 	getConnection().query(query, [req.params.id], (err, rows, fields) => {
 		if (err) { //error handling
