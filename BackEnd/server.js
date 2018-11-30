@@ -82,14 +82,7 @@ app.get('/users', (req, res) => {
 
 app.get("/", (req, res) => { //specified a routing function
 	console.log("Responding to root route ")
-<<<<<<< HEAD:BackEnd/server.js
-	res.send("Hello from ROOOT")
 })
-=======
-	res.send("Hello")
- })
->>>>>>> 006e0fa2685b4c6bac0acaf52e880a85308bc80c:BackEnd/app.js
-
 /*
 app.get("/user", (req, res) => {
 	var user1 = {
