@@ -25,8 +25,8 @@ login_router.post('/login', (req, res) => {
 
     var username = req.body.username;
     var password = req.body.password;
-    var check_query = "select * from users where name = ?";
-    getConnection().query(check_query, [username], (err, rows, fields) => {
+    var check_query = "select * from users where name = ? and password = ?";
+    getConnection().query(check_query, [username, password], (err, rows, fields) => {
         if (err) {
             console.log("Failed to check user: " + err)
             res.sendStatus(500)
