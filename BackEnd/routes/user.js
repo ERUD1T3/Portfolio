@@ -82,7 +82,7 @@ router.get('/users/:id', (req, res) => {
 			res.end()
 			return
 		}
-		console.log("User " + req.params.id + "successfully fetched")
+		console.log("User " + req.params.id + " successfully fetched")
 		res.json(rows)
 	})
 })

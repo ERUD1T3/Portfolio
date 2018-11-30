@@ -12,7 +12,18 @@
 <body align="center">
     <header id="Dank_C0D3">Dank_C0D3</header>
     <hr />
+    <h1 id="login">Login</h1>
+    <form action="/login" method="POST">
+        <!--sends a post request to server to create user. user_create is the route -->
+        <p>Username</p>
+        <input name="username" id="username" type="text" />
+        <p>Password</p>
+        <input name="password" id="password" type="password" /><br>
 
+        <input type="submit" value="login" required>
+        <!--<button>Submit<button>-->
+        <input id="clear" type="reset" value="clear">
+    </form>
 </body>
 
 </html>
