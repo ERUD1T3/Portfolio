@@ -6,10 +6,6 @@ const mysql = require('mysql')
 const bodyParser = require('body-parser')
 
 const router = express.Router()
-router.get('/messages', (req, res) => {
-	console.log("Messages")
-	res.end()
-})
 
 const pool = mysql.createPool({
 	connectionLimit: 10, //serve 10 connection at a time while queuing additional connections`
@@ -22,6 +18,12 @@ const pool = mysql.createPool({
 function getConnection() {
 	return pool;
 }
+
+router.get('/messages', (req, res) => {
+	console.log("Messages")
+	res.end()
+})
+
 
 router.post('/user_create', (req, res) => {
 	res.send("added " + req.body.username + " to database");
