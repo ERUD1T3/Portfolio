@@ -19,7 +19,7 @@ function getConnection() {
     return pool;
 }
 
-router.post('/login', (req, res) => {
+login_router.post('/login', (req, res) => {
     res.send("verifying " + req.body.username + " in database");
     console.log("verifying");
 
