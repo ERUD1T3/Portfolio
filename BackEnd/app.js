@@ -76,7 +76,7 @@ app.get('/users', (req, res) => {
 
 app.get("/", (req, res) => { //specified a routing function
 	console.log("Responding to root route ")
-	res.send("Hello from ROOOT")
+	res.send("Hello")
  })
 
 app.get("/user", (req, res) => {
