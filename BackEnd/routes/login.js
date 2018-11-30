@@ -18,7 +18,7 @@ function getConnection() {
 }
 
 login_router.post('/login', (req, res) => {
-    res.send("verifying " + req.body.username + " in database");
+    ///res.send("verifying " + req.body.username + " in database");
     console.log("verifying");
 
     //console.log("First name: " + req.body.username);
