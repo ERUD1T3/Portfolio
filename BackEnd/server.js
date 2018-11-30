@@ -14,8 +14,11 @@ app.use(morgan('short')) //use morgan to log request from/to server
 
 ///////////////////////
 const router = require('./routes/user.js') //create a route instance for chained handlers 
+const login_router = require('./routes/login.js')
+
 
 app.use(router) //using the user.js router
+app.use(login_router)
 //////////////////////////////////////
 
 app.get("/", (req, res) => { //specified a routing function
