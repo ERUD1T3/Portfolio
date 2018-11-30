@@ -45,31 +45,47 @@ router.post('/user_create', (req, res) => {
 	})
 })
 
-//router.get('/user/:id', (req, res) => {
 router.get('/users', (req, res) => {
+
 	console.log('Fetching user with id: ' + req.params.id)
+	/*
 	const connection = mysql.createConnection({
 		host: 'localhost',
 		user: 'root',
 		password: 'open',
 		database: 'mfs_db'
 	})
+	*/
 
 	//var query1 = "select * from users where name = ?"; //? is a placeholder for userId
 	var query1 = "select * from users";
 	var username = req.params.id
 
-	connection.query(query1, (err, rows, fields) => {
+	getConnection().query(query1, (err, rows, fields) => {
 		if (err) { //error handling
 			console.log("Failed to query for users: " + err)
 			res.sendStatus(500) //output internal  server error
 			res.end()
 			return
 		}
-		console.log("I think we fetched users succcessfully");
+		console.log("User fetched succcessfully");
 		res.json(rows)
 	})
-	//res.end()
 })
+
+router.get('/user/:id', (req, res) => {
+	const query = "select * from users where id = ?";
+	getConnection().query(query, [req.params.id], (err, rows, fields) => {
+		if (err) { //error handling
+			console.log("Failed to query user: " + req.params.id + " error: " + err)
+			res.sendStatus(500) //output internal  server error
+			res.end()
+			return
+		}
+		console.log("User " + req.params.id + "successfully fetched")
+		res.json(rows)
+	})
+})
+
 
 module.exports = router //exports the router module to other files
