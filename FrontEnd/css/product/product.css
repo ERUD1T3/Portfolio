@@ -1,6 +1,6 @@
 h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 
-/********************* shopping Demo-1 **********************/
+/* ******************** shopping Demo-1 *********************
 .product-grid{font-family:Raleway,sans-serif;text-align:center;padding:0 0 72px;border:1px solid rgba(0,0,0,.1);overflow:hidden;position:relative;z-index:1}
 .product-grid .product-image{position:relative;transition:all .3s ease 0s}
 .product-grid .product-image a{display:block}
@@ -32,7 +32,7 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 @media only screen and (max-width:990px){.product-grid{margin-bottom:30px}
 }
 
-/********************* Shopping Demo-2 **********************/
+/********************* Shopping Demo-2 *********************
 .demo{padding:45px 0}
 .product-grid2{font-family:'Open Sans',sans-serif;position:relative}
 .product-grid2 .product-image2{overflow:hidden;position:relative}
@@ -64,8 +64,9 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 .product-grid2 .price{color:#303030;font-size:15px}
 @media screen and (max-width:990px){.product-grid2{margin-bottom:30px}
 }
+*/
 
-/********************* Shopping Demo-3 **********************/
+/********************* Shopping Demo-3 *********************
 .product-grid3{font-family:Roboto,sans-serif;text-align:center;position:relative;z-index:1}
 .product-grid3:before{content:"";height:81%;width:100%;background:#fff;border:1px solid rgba(0,0,0,.1);opacity:0;position:absolute;top:0;left:0;z-index:-1;transition:all .5s ease 0s}
 .product-grid3:hover:before{opacity:1;height:100%}
@@ -98,8 +99,9 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 }
 @media only screen and (max-width:359px){.product-grid3 .rating{margin:0}
 }
+*/
 
-/********************* Shopping Demo-4 **********************/
+/********************* Shopping Demo-4 *********************
 .product-grid4,.product-grid4 .product-image4{position:relative}
 .product-grid4{font-family:Poppins,sans-serif;text-align:center;border-radius:5px;overflow:hidden;z-index:1;transition:all .3s ease 0s}
 .product-grid4:hover{box-shadow:0 0 10px rgba(0,0,0,.2)}
@@ -134,8 +136,9 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 .product-grid4 .add-to-cart:hover{background-color:#505050;box-shadow:0 0 10px rgba(0,0,0,.5)}
 @media only screen and (max-width:990px){.product-grid4{margin-bottom:30px}
 }
+*/
 
-/********************* Shopping Demo-5 **********************/
+/********************* Shopping Demo-5 *********************
 .product-image5 .pic-1,.product-image5 .pic-2{backface-visibility:hidden;transition:all .5s ease 0s}
 .product-grid5{font-family:Poppins,sans-serif;position:relative}
 .product-grid5 .product-image5{overflow:hidden;position:relative}
@@ -163,8 +166,9 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 .product-grid5 .price{color:#222;font-size:13px;font-weight:500;letter-spacing:1px}
 @media only screen and (max-width:990px){.product-grid5{margin-bottom:30px}
 }
+*/
 
-/********************* Shopping Demo-6 **********************/
+/********************* Shopping Demo-6 *********************
 .product-grid6,.product-grid6 .product-image6{overflow:hidden}
 .product-grid6{font-family:'Open Sans',sans-serif;text-align:center;position:relative;transition:all .5s ease 0s}
 .product-grid6:hover{box-shadow:0 0 10px rgba(0,0,0,.3)}
@@ -188,8 +192,9 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 .product-grid6 .social li a:hover:after,.product-grid6 .social li a:hover:before{opacity:1}
 @media only screen and (max-width:990px){.product-grid6{margin-bottom:30px}
 }
+*/
 
-/********************* Shopping Demo-7 **********************/
+/********************* Shopping Demo-7 *********************
 .product-grid7{font-family:'Roboto Slab',serif;position:relative;z-index:1}
 .product-grid7 .product-image7{border:1px solid rgba(0,0,0,.1);overflow:hidden;perspective:1500px;position:relative;transition:all .3s ease 0s}
 .product-grid7 .product-image7 a{display:block}
@@ -210,7 +215,7 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 .product-grid7 .price{color:#333;font-size:20px;font-family:Lora,serif;font-weight:700;margin-bottom:8px;text-align:center;transition:all .3s}
 .product-grid7 .price span{color:#999;font-size:14px;font-weight:700;text-decoration:line-through;margin-left:7px;display:inline-block}
 @media only screen and (max-width:990px){.product-grid7{margin-bottom:30px}
-}
+} */
 
 /********************* Shopping Demo-8 **********************/
 .product-grid8{font-family:Poppins,sans-serif;position:relative;z-index:1}
@@ -245,7 +250,7 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 @media only screen and (max-width:990px){.product-grid8{margin-bottom:30px}
 }
 
-/********************* Shopping Demo-9 **********************/
+/* ******************** Shopping Demo-9 *********************
 .product-grid9,.product-grid9 .product-image9{position:relative}
 .product-grid9{font-family:Poppins,sans-serif;z-index:1}
 .product-grid9 .product-image9 a{display:block}
@@ -269,4 +274,4 @@ h3.h3{text-align:center;margin:1em;text-transform:capitalize;font-size:1.7em;}
 .product-grid9 .add-to-cart{display:block;color:#c0392b;font-weight:600;font-size:14px;opacity:0;position:absolute;left:10px;bottom:-20px;transition:all .5s ease 0s}
 .product-grid9:hover .add-to-cart{opacity:1;bottom:0}
 @media only screen and (max-width:990px){.product-grid9{margin-bottom:30px}
-}
+} */
