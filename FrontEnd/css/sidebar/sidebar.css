@@ -1,11 +1,16 @@
 /*
     DEMO STYLE
 */
-
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #372065;
+
+.btn {
+    color:black;
+    background-color:red;
+    margin: 0px 1px 0px 1px
+}
+
+.btn:hover{
+    background-color: hotpink;
 }
 
 p {
@@ -25,7 +30,6 @@ a:focus {
 }
 
 .navbar {
-    padding: 15px 10px;
     background: rgb(0, 0, 0);
     border: none;
     border-radius: 0;
@@ -69,11 +73,12 @@ a:focus {
 }
 
 #dismiss {
+    color: black;
     width: 35px;
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: orange;
+    background: red;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -126,13 +131,13 @@ a:focus {
 
 #sidebar ul li a:hover {
     color: rgb(224, 138, 24);
-    background: rgb(31, 109, 199);
+    background:rgba(255, 255, 255, 0.233);
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: rgb(224, 138, 24);
+    background: rgba(255, 255, 255, 0.233);
 }
 
 a[data-toggle="collapse"] {
@@ -150,7 +155,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: gold;
+    background:rgb(45, 44, 53);
 }
 
 ul.CTAs {

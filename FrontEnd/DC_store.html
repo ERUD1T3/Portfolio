@@ -25,57 +25,80 @@
 
 <body>
     <div class="wrapper">
-        <!-- Sidebar  -->
         <nav id="sidebar">
             <div id="dismiss">
                 <i class="fas fa-arrow-left"></i>
             </div>
-
-            <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
-            </div>
-
+            
             <ul class="list-unstyled components">
-                <p>Dummy Heading</p>
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
+                    <div class="nav-side-menu">
+                            <div class="brand">Brand Logo</div>
+                            <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                          
+                                <div class="menu-list">
+                          
+                                    <ul id="menu-content" class="menu-content collapse out">
+                                        <li>
+                                          <a href="#">
+                                          <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                                          </a>
+                                        </li>
+                        
+                                        <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                                          <a href="#"><i class="fa fa-gift fa-lg"></i> UI Elements <span class="arrow"></span></a>
+                                        </li>
+                                        <ul class="sub-menu collapse" id="products">
+                                            <li class="active"><a href="#">CSS3 Animation</a></li>
+                                            <li><a href="#">General</a></li>
+                                            <li><a href="#">Buttons</a></li>
+                                            <li><a href="#">Tabs & Accordions</a></li>
+                                            <li><a href="#">Typography</a></li>
+                                            <li><a href="#">FontAwesome</a></li>
+                                            <li><a href="#">Slider</a></li>
+                                            <li><a href="#">Panels</a></li>
+                                            <li><a href="#">Widgets</a></li>
+                                            <li><a href="#">Bootstrap Model</a></li>
+                                        </ul>
+                        
+                        
+                                        <li data-toggle="collapse" data-target="#service" class="collapsed">
+                                          <a href="#"><i class="fa fa-globe fa-lg"></i> Services <span class="arrow"></span></a>
+                                        </li>  
+                                        <ul class="sub-menu collapse" id="service">
+                                          <li>New Service 1</li>
+                                          <li>New Service 2</li>
+                                          <li>New Service 3</li>
+                                        </ul>
+                        
+                        
+                                        <li data-toggle="collapse" data-target="#new" class="collapsed">
+                                          <a href="#"><i class="fa fa-car fa-lg"></i> New <span class="arrow"></span></a>
+                                        </li>
+                                        <ul class="sub-menu collapse" id="new">
+                                          <li>New New 1</li>
+                                          <li>New New 2</li>
+                                          <li>New New 3</li>
+                                        </ul>
+                        
+                        
+                                         <li>
+                                          <a href="#">
+                                          <i class="fa fa-user fa-lg"></i> Profile
+                                          </a>
+                                          </li>
+                        
+                                         <li>
+                                          <a href="#">
+                                          <i class="fa fa-users fa-lg"></i> Users
+                                          </a>
+                                        </li>
+                                    </ul>
+                             </div>
+                        </div>
+                </ul>
         </nav>
 
-        <!-- Page Content  -->
+
         <div id="content">
 
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -125,15 +148,15 @@
                                     <li><a href="" class="fa fa-shopping-bag"></a></li>
                                     <li><a href="" class="fa fa-shopping-cart"></a></li>
                                 </ul>
-                                <span class="product-discount-label">-20%</span>
+                                <!-- <span class="product-discount-label">-20%</span> -->
                             </div>
                             <div class="product-content">
-                                <div class="price">£ 8.00
-                                    <span>£ 10.00</span>
+                                <div class="price">$ 1,000,000.00
+                                    <!-- <span>£ 10.00</span> -->
                                 </div>
-                                <span class="product-shipping">Free Shipping</span>
-                                <h3 class="title"><a href="#">Women's Plain Top</a></h3>
-                                <a class="all-deals" href="">See all deals <i class="fa fa-angle-right icon"></i></a>
+                                <!-- <span class="product-shipping">Free Shipping</span> -->
+                                <h3 class="title"><a href="#">Software_One</a></h3>
+                                <a class="details" href="">More Info<i class="fa fa-angle-right icon"></i></a>
                             </div>
                         </div>
                     </div>
@@ -149,17 +172,17 @@
                                     <li><a href="" class="fa fa-shopping-bag"></a></li>
                                     <li><a href="" class="fa fa-shopping-cart"></a></li>
                                 </ul>
-                                <span class="product-discount-label">-30%</span>
+                                <!-- <span class="product-discount-label">-30%</span> -->
                             </div>
                             <div class="product-content">
-                                <div class="price">£ 7.00
-                                    <span>£ 10.00</span>
+                                <div class="price">$1.00
+                                    <!-- <span>£ 10.00</span> -->
                                 </div>
-                                <span class="product-shipping">Free Shipping</span>
-                                <h3 class="title"><a href="#">Women's Designer Top</a></h3>
+                                <!-- <span class="product-shipping">Free Shipping</span> -->
+                                <h3 class="title"><a href="#">Software_Two</a></h3>
                                 <form method="POST">
                                     <button type= "" formaction="/Data/first_classifier.py">
-                                <a class="all-deals" href="">See all deals <i class="fa fa-angle-right icon"></i></a>
+                                <a class="details" href="">More Info<i class="fa fa-angle-right icon"></i></a>
                                 </button>
                                 </form>
                             </div>
@@ -177,15 +200,15 @@
                                     <li><a href="" class="fa fa-shopping-bag"></a></li>
                                     <li><a href="" class="fa fa-shopping-cart"></a></li>
                                 </ul>
-                                <span class="product-discount-label">-20%</span>
+                                <!-- <span class="product-discount-label">-20%</span> -->
                             </div>
                             <div class="product-content">
-                                <div class="price">£ 8.00
-                                    <span>£ 10.00</span>
+                                <div class="price">$ 5.00
+                                    <!-- <span>£ 10.00</span> -->
                                 </div>
-                                <span class="product-shipping">Free Shipping</span>
-                                <h3 class="title"><a href="#">Women's Plain Top</a></h3>
-                                <a class="all-deals" href="">See all deals <i class="fa fa-angle-right icon"></i></a>
+                                <!-- <span class="product-shipping">Free Shipping</span> -->
+                                <h3 class="title"><a href="#">Software_Three</a></h3>
+                                <a class="details" href="">More Info<i class="fa fa-angle-right icon"></i></a>
                             </div>
                         </div>
                     </div>
