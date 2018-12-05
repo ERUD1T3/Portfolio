@@ -27,6 +27,7 @@ router.get('/messages', (req, res) => {
 
 router.post('/user_create', (req, res) => {
 	console.log("added " + req.body.username + " to database");
+	res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/login_page/loggedin.html")
 	//console.log("creating new user");
 
 	//console.log("First name: " + req.body.username);
