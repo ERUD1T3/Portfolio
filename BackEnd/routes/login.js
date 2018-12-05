@@ -37,7 +37,7 @@ login_router.post('/login', (req, res) => {
             res.send("invalid Username")
         } else {
             console.log("user verified");
-            res.send("valid username")
+            res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/login_page/loggedin.html")
         }
         res.end();
     })
