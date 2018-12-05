@@ -29,7 +29,7 @@ app.get("/", (req, res) => { //specified a routing function
 
 app.post("/signup_page/sign_up", (req, res) => {
 	res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/signup_page/sign_up.html");
-	res.end();
+	console.log("rerouting to signup");
 })
 
 app.post("/Data/first_classifier.py", (req, res) => {
