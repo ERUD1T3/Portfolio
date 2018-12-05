@@ -3,6 +3,14 @@ const app = express() //creating a express instance
 const morgan = require('morgan')
 const mysql = require('mysql')
 const bodyParser = require('body-parser')
+const fs = require('fs')
+
+var localhost;
+
+fs.readFile('/home/pi/Desktop/Portfolio/BackEnd/localhost.txt', 'utf8', function(err, contents) {
+	localhost = contents;
+});
+
 
 app.use(bodyParser.urlencoded({
 	extended: false
@@ -35,5 +43,5 @@ app.post("/Data/first_classifier.py", (req, res) => {
 	res.end();
 })
 app.listen(8080, () => {
-	console.log("Server is up and listening at localhost:8080")
+	console.log("Server is up and listening at ${localhost}:8080")
 })
