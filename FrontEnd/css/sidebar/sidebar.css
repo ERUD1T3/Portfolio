@@ -3,6 +3,20 @@
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+
 .btn {
     color:black;
     background-color:red;
@@ -55,10 +69,10 @@ a:focus {
 ----------------------------------------------------- */
 
 #sidebar {
-    width: 250px;
+    /* width: 250px; */
     position: fixed;
     top: 0;
-    left: -250px;
+    left: -300px;
     height: 100vh;
     z-index: 999;
     background: rgb(45, 44, 53);
@@ -67,6 +81,7 @@ a:focus {
     overflow-y: scroll;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
+
 
 #sidebar.active {
     left: 0;
