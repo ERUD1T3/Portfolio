@@ -34,12 +34,12 @@ login_router.post('/login', (req, res) => {
         }
         if (rows.length < 1) {
             console.log("User not present");
-            res.send("invalid Username")
+            res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/login_page/notlog.html")
+
         } else {
             console.log("user verified");
-            res.send("valid username")
+            res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/login_page/loggedin.html")
         }
-        res.end();
     })
 })
 
