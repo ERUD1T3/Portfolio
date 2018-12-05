@@ -38,11 +38,11 @@ app.post("/Data/first_classifier.py", (req, res) => {
 })
 app.listen(8080, () => {
 	var localhost;
-	fs.readFile('/home/pi/Desktop/Portfolio/BackEnd/localhost.txt', (err, data) => {
+	fs.readFile('./localhost.txt','utf8', (err, data) => {
 		if(err) {
 			throw error;
 		}
 		localhost = data;
+	console.log("Server is up and listening at\nAddress: " + localhost + "Port: 8080")
 	})
-	console.log("Server is up and listening at " + localhost + ":8080")
 })
