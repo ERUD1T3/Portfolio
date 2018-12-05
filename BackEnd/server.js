@@ -44,5 +44,6 @@ app.listen(8080, () => {
 		}
 		localhost = data;
 	console.log("Server is up and listening at\nAddress: " + localhost + "Port: 8080")
+		console.log("Website: DC_store.html");
 	})
 })
