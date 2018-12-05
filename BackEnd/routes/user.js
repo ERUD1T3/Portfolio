@@ -26,10 +26,10 @@ router.get('/messages', (req, res) => {
 
 
 router.post('/user_create', (req, res) => {
-	res.send("added " + req.body.username + " to database");
-	console.log("creating new user");
+	console.log("added " + req.body.username + " to database");
+	//console.log("creating new user");
 
-	console.log("First name: " + req.body.username);
+	//console.log("First name: " + req.body.username);
 
 	var username = req.body.username;
 	var password = req.body.password;
