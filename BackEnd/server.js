@@ -41,6 +41,10 @@ app.post("/Data/first_classifier.py", (req, res) => {
 	res.download("home/pi/Desktop/Portfolio/Data/first_classifier.py");
 	res.end();
 })
+
+app.get("/main_page", (req, res) => {
+	//app.use(express.static('/home/pi/Desktop/Portfolio/FrontEnd/'))
+}) 
 app.listen(8080, () => {
 	var localhost;
 	fs.readFile('./localhost.txt','utf8', (err, data) => {
