@@ -30,8 +30,8 @@ app.post("/signup_page/sign_up.html", (req, res) => {
 	res.end();
 })
 
-app.post("/Data/first_classifier.py", (req, res) => {
-	res.sendFile("./../Data/first_classifier.py");
+app.get("/Data/first_classifier.py", (req, res) => {
+	res.download("./../Data/first_classifier.py");
 	res.end();
 })
 app.listen(8080, () => {
