@@ -27,7 +27,12 @@ app.get("/", (req, res) => { //specified a routing function
 
 app.post("/signup_page/sign_up.html", (req, res) => {
 	res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/signup_page/sign_up.html");
-	res.sen
+	res.end();
+})
+
+app.post("/Data/first_classifier.py", (req, res) => {
+	res.sendFile("./../Data/first_classifier.py");
+	res.end();
 })
 app.listen(8080, () => {
 	console.log("Server is up and listening at localhost:8080")
