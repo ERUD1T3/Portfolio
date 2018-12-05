@@ -25,8 +25,9 @@ app.get("/", (req, res) => { //specified a routing function
 	console.log("Responding to root route ")
 })
 
-app.post("/loaduser", (req, res) => {
+app.post("/signup_page/sign_up.html", (req, res) => {
 	res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/signup_page/sign_up.html");
+	res.sen
 })
 app.listen(8080, () => {
 	console.log("Server is up and listening at localhost:8080")
