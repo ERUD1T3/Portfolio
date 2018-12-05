@@ -42,8 +42,8 @@ app.post("/Data/first_classifier.py", (req, res) => {
 	res.end();
 })
 
-app.get("/main_page", (req, res) => {
-	//app.use(express.static('/home/pi/Desktop/Portfolio/FrontEnd/'))
+app.get("/login_page/main_page", (req, res) => {
+	app.use(express.static('/home/pi/Desktop/Portfolio/FrontEnd/'))
 }) 
 app.listen(8080, () => {
 	var localhost;
