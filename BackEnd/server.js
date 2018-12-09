@@ -32,7 +32,7 @@ app.post("/red_login", (req, res) => {
 	console.log("rerouting to login");
 })
 
-app.get("/signup_page/sign_up", (req, res) => {
+app.get("/sign_up", (req, res) => {
 	res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/sign_up.html");
 	console.log("rerouting to signup");
 })
