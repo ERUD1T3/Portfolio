@@ -1,4 +1,4 @@
-# Portfolio (under construction)
+# WebPortfolio
   portfolio website using HTML, CSS, Javascript, NodeJS
 
 # Depencies

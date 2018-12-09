@@ -49,11 +49,11 @@ login_router.post('/login', (req, res) => {
         }
         if (rows.length < 1) {
             console.log("User not present");
-            res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/notlog.html")
+            res.sendFile("/home/pi/Desktop/WebPortfolio/FrontEnd/notlog.html")
 
         } else {
             console.log("user verified");
-            res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/loggedin.html")
+            res.sendFile("/home/pi/Desktop/WebPortfolio/FrontEnd/loggedin.html")
         }
     })
 })

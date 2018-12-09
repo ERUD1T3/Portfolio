@@ -27,17 +27,17 @@ app.get("/", (req, res) => { //specified a routing function
 })
 
 app.post("/red_login", (req, res) => {
-	res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/login.html");
+	res.sendFile("/home/pi/Desktop/WebPortfolio/FrontEnd/login.html");
 	console.log("rerouting to login");
 })
 
 app.get("/sign_up", (req, res) => {
-	res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/sign_up.html");
+	res.sendFile("/home/pi/Desktop/WebPortfolio/FrontEnd/sign_up.html");
 	console.log("rerouting to signup");
 })
 
 app.post("/Data/first_classifier.py", (req, res) => {
-	res.download("home/pi/Desktop/Portfolio/Data/first_classifier.py");
+	res.download("home/pi/Desktop/WebPortfolio/Data/first_classifier.py");
 	res.end();
 })
 
