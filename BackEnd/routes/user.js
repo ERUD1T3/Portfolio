@@ -61,7 +61,7 @@ router.post('/user_create', (req, res) => {
 		
 		//res.end();
 	})
-	res.sendFile(path.resolve('DC_store.html'));
+	res.sendFile(path.resolve('/../DC_store.html'));
 })
 
 router.get('/users', (req, res) => {
