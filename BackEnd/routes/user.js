@@ -5,6 +5,7 @@ const morgan = require('morgan');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const crypto = require('crypto');
+const path = require('path');
 
 function encrypt(password) {
 	var key = crypto.createCipher('aes-128-cbc', 'mypassword');
@@ -60,7 +61,7 @@ router.post('/user_create', (req, res) => {
 		
 		//res.end();
 	})
-	res.sendFile('/../DC_store.html');
+	res.sendFile(path.resolve('DC_store.html'));
 })
 
 router.get('/users', (req, res) => {
