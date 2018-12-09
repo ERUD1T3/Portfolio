@@ -28,12 +28,12 @@ app.get("/", (req, res) => { //specified a routing function
 })
 
 app.post("/login", (req, res) => {
-	res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/login_page/login.html");
+	res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/login.html");
 	console.log("rerouting to login");
 })
 
 app.get("/signup_page/sign_up", (req, res) => {
-	res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/signup_page/sign_up.html");
+	res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/sign_up.html");
 	console.log("rerouting to signup");
 })
 
