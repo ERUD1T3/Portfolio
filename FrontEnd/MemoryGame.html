@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="memorygame.css" />
+    <script src="memorygame.js"></script>
+</head>
+<body bgcolor = "#372065">
+        <a class = "Dank_C0D3" href= "DC_store.html" ><header class="Dank_C0D3">Dank_C0D3</header></a>
+        <hr />
+    <table id = "main_grid" align="center">
+        <tbody>
+                <tr>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(0)" ></td>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(1)" ></td>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(2)" ></td>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(3)" ></td>
+                </tr> 
+                <tr>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(4)" ></td>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(5)" ></td>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(6)" ></td>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(7)" ></td>
+                </tr> 
+                <tr>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(8)" ></td>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(9)" ></td>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(10)" ></td>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(11)" ></td>
+                </tr> 
+        </tbody>
+    </table>
+    <input id = "new_game" type = "button" value = "New Game" onclick = "new_game()" required/>
+    <p id = "score" class= "trackers">Score: 0 </p>
+    <p id = "tries" class= "trackers">Tries: 0 </p>
+    <p id = "time" class= "trackers">Time: 0 </p>
+</body>
+</html>

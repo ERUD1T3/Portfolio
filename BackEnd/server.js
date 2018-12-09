@@ -5,7 +5,6 @@ const mysql = require('mysql')
 const bodyParser = require('body-parser')
 const fs = require('fs')
 
-
 app.use(bodyParser.urlencoded({
 	extended: false
 })) //middleware to parse data from request 
@@ -27,13 +26,13 @@ app.get("/", (req, res) => { //specified a routing function
 	console.log("Responding to root route ")
 })
 
-app.post("/login_page/login", (req, res) => {
-	res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/login_page/login.html");
+app.post("/red_login", (req, res) => {
+	res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/login.html");
 	console.log("rerouting to login");
 })
 
-app.get("/signup_page/sign_up", (req, res) => {
-	res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/signup_page/sign_up.html");
+app.get("/sign_up", (req, res) => {
+	res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/sign_up.html");
 	console.log("rerouting to signup");
 })
 

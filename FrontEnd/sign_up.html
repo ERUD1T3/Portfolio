@@ -3,36 +3,34 @@
 
 <head>
     <meta charset="utf-8" />
-    <script src="login.js"></script>
+    <script src="sign_up.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="login.css" />
-    <title>Dank_C0D3: Login</title>
     <style>
-        .Dank_C0D3 {
+        #Dank_C0D3 {
             font-size: 48px;
             color: darkmagenta;
         }  
-        a.Dank_C0D3 {
+        a {
             text-decoration: none;
         }
     </style>
+    <title>Dank_C0D3: Sign Up</title>
 </head>
 
 <body align="center">
-    <a class = "Dank_C0D3" href= "http://163.118.235.225:8080/DC_store.html" ><header class="Dank_C0D3">Dank_C0D3</header></a>
+    <a href= "DC_store.html" ><header id="Dank_C0D3">Dank_C0D3</header></a>
     <hr />
-    <h1 id="login">Login</h1>
-    <form action="/login" method="POST">
+    <h1 id="sign_up">Sign Up</h1>
+    <form action="/user_create" method="POST">
         <!--sends a post request to server to create user. user_create is the route -->
-        <p>Username</p>
+        <p>Name</p>
         <input name="username" id="username" type="text" />
         <p>Password</p>
         <input name="password" id="password" type="password" /><br>
 
-        <input type="submit" value="login" required>
+        <input type="submit" value="Save" onclick="main()" required>
         <!--<button>Submit<button>-->
-        <input id="clear" type="reset" value="clear"><br>
-        <a href="/signup_page/sign_up">No Account, Sign Up</a>
+        <input id="clear" type="reset" value="clear">
     </form>
 </body>
 

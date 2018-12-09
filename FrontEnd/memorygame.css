@@ -1,0 +1,68 @@
+/*style guidelines for Memory Game*/
+
+#main_grid {
+    /*position: absolute;*/
+    top: 100px;
+    align-self: center;
+}
+
+td, tr {
+    min-width: 200px;
+    min-height: 200px;
+}
+
+input { /*properties of the images input*/
+    width: 200px;
+    height: 200px;
+}
+
+table, td { 
+    border: 1px solid black;
+}
+
+#new_game {
+    position: absolute;
+    left: 980px;
+    top: 745px;
+    width: 100px;
+    height: 25px;  
+    border-radius: 15%; 
+}
+
+#score {
+    position: absolute;
+    top: 730px;
+    font-family: "roboto";
+    font-size: 18px;
+    color: white;
+    left: 20%;
+    
+}
+
+#tries {
+    position: absolute;
+    top: 760px;
+    font-family: "roboto";
+    font-size: 18px;
+    color: white;
+    left: 20%;
+}
+
+#time {
+    position: absolute;
+    top: 790px;
+    font-family: "roboto";
+    font-size: 18px;
+    color: white;
+    left: 20%;
+}
+
+
+.Dank_C0D3 {
+    font-size: 48px;
+    color: darkmagenta;
+    text-align: center;
+}  
+a.Dank_C0D3 {
+    text-decoration: none;
+}
