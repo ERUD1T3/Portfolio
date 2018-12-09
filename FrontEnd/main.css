@@ -32,19 +32,23 @@ table, td {
     position: absolute;
     top: 670px;
     font-family: "roboto";
-    font-size: 18px
+    font-size: 18px;
+    color: white
+    
 }
 
 #tries {
     position: absolute;
     top: 700px;
     font-family: "roboto";
-    font-size: 18px
+    font-size: 18px;
+    color: white;
 }
 
 #time {
     position: absolute;
     top: 730px;
     font-family: "roboto";
-    font-size: 18px
+    font-size: 18px;
+    color: white;
 }
