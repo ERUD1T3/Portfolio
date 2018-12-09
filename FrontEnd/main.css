@@ -22,10 +22,11 @@ table, td {
 
 #new_game {
     position: absolute;
-    left: 700px;
+    left: 730px;
     top: 745px;
     width: 100px;
-    height: 25px;   
+    height: 25px;  
+    border-radius: 25%; 
 }
 
 #score {
