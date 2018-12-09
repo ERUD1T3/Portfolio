@@ -1,15 +1,16 @@
 //file to encapsulate the routes to the server
-const express = require('express') //importing express packages
+const express = require('express'); //importing express packages
 const app = express() //creating a express instance 
-const morgan = require('morgan')
-const mysql = require('mysql')
-const bodyParser = require('body-parser')
-const crypto = require('crypto')
+const morgan = require('morgan');
+const mysql = require('mysql');
+const bodyParser = require('body-parser');
+const crypto = require('crypto');
 
 function encrypt(password) {
 	var key = crypto.createCipher('aes-128-cbc', 'mypassword');
 	var cipher = key.update(password, 'utf8', 'hex')
-	cipher += key.update.final('hex');
+	//cipher += key.update.final('hex');
+
 	return cipher;
 }
 
