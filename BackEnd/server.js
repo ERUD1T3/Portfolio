@@ -5,7 +5,6 @@ const mysql = require('mysql')
 const bodyParser = require('body-parser')
 const fs = require('fs')
 
-
 app.use(bodyParser.urlencoded({
 	extended: false
 })) //middleware to parse data from request 
