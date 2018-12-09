@@ -34,7 +34,8 @@ table, td {
     top: 730px;
     font-family: "roboto";
     font-size: 18px;
-    color: white
+    color: white;
+    left: 20%;
     
 }
 
@@ -44,6 +45,7 @@ table, td {
     font-family: "roboto";
     font-size: 18px;
     color: white;
+    left: 20%;
 }
 
 #time {
@@ -52,6 +54,7 @@ table, td {
     font-family: "roboto";
     font-size: 18px;
     color: white;
+    left: 20%;
 }
 
 
@@ -62,9 +65,4 @@ table, td {
 }  
 a.Dank_C0D3 {
     text-decoration: none;
-}
-
-
-p.tracker{
-    left: 20%;
 }
