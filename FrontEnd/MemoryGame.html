@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body bgcolor = "#cceeff">
+    <table id = "main_grid">
+        <tbody>
+                <tr>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(0)" ></td>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(1)" ></td>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(2)" ></td>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(3)" ></td>
+                </tr> 
+                <tr>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(4)" ></td>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(5)" ></td>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(6)" ></td>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(7)" ></td>
+                </tr> 
+                <tr>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(8)" ></td>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(9)" ></td>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(10)" ></td>
+                    <td><input type = "image" src = "imgs/skull_alert.jpg" onclick="show_img(11)" ></td>
+                </tr> 
+        </tbody>
+    </table>
+    <input id = "new_game" type = "button" value = "New Game" onclick = "new_game()" required/>
+    <p id = "score">Score: 0 </p>
+    <p id = "tries">Tries: 0 </p>
+    <p id = "time">Time: 0 </p>
+</body>
+</html>

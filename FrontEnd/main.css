@@ -1,0 +1,50 @@
+/*style guidelines for Memory Game*/
+
+#main_grid {
+    position: absolute;
+    top: 40px;
+    text-align: center;
+}
+
+td, tr {
+    min-width: 200px;
+    min-height: 200px;
+}
+
+input { /*properties of the images input*/
+    width: 200px;
+    height: 200px;
+}
+
+table, td { 
+    border: 1px solid black;
+}
+
+#new_game {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 100px;
+    height: 25px;   
+}
+
+#score {
+    position: absolute;
+    top: 670px;
+    font-family: "roboto";
+    font-size: 18px
+}
+
+#tries {
+    position: absolute;
+    top: 700px;
+    font-family: "roboto";
+    font-size: 18px
+}
+
+#time {
+    position: absolute;
+    top: 730px;
+    font-family: "roboto";
+    font-size: 18px
+}
