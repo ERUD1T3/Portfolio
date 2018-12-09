@@ -9,7 +9,7 @@ const crypto = require('crypto');
 function encrypt(password) {
 	var key = crypto.createCipher('aes-128-cbc', 'mypassword');
 	var cipher = key.update(password, 'utf8', 'hex')
-	//cipher += key.update.final('hex');
+	cipher += key.final('hex');
 
 	return cipher;
 }
