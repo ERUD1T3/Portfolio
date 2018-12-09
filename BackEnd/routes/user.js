@@ -41,8 +41,10 @@ router.post('/user_create', (req, res) => {
 			return
 		}
 		console.log("Inserted a new user with id: ", results.insertId);
-		res.end();
+		
+		//res.end();
 	})
+	res.sendFile('/../DC_store.html');
 })
 
 router.get('/users', (req, res) => {
