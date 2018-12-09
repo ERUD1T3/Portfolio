@@ -82,8 +82,8 @@
                         <ul class="nav navbar-nave ml-auto">
                             <li>  
                                 <form class="form-inline">
-                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-outline my-2 my-sm-0" type="submit" ><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    <input class="form-control mr-sm-2" id="searchbar" value ="" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline my-2 my-sm-0"  id="search" type="submit" ><i class="fa fa-search" aria-hidden="true"></i></button>
                                 </form>
                             </li>
                             <li class="nav-item active">
@@ -208,6 +208,11 @@
                 $('.collapse.in').toggleClass('in');
                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
             });
+
+            $('#search').on('click', function(){
+                var searched = $('#searchbar').val()
+                window.location.href = 'http://www.google.com';
+            })
         });
     </script>
 </body>
