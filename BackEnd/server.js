@@ -27,7 +27,7 @@ app.get("/", (req, res) => { //specified a routing function
 	console.log("Responding to root route ")
 })
 
-app.post("/login", (req, res) => {
+app.post("/red_login", (req, res) => {
 	res.sendFile("/home/pi/Desktop/Portfolio/FrontEnd/login.html");
 	console.log("rerouting to login");
 })
