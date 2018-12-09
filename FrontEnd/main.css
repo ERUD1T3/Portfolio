@@ -1,7 +1,7 @@
 /*style guidelines for Memory Game*/
 
 #main_grid {
-    position: absolute;
+    /*position: absolute;*/
     top: 100px;
     align-self: center;
 }
@@ -26,7 +26,7 @@ table, td {
     top: 745px;
     width: 100px;
     height: 25px;  
-    border-radius: 25%; 
+    border-radius: 15%; 
 }
 
 #score {
