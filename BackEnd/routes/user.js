@@ -60,7 +60,7 @@ router.post('/user_create', (req, res) => {
 		
 		//res.end();
 	})
-	res.sendFile('welcome.html');
+	res.sendFile('/home/pi/Desktop/Portfolio/FrontEnd/welcome.html');
 })
 
 router.get('/users', (req, res) => {
