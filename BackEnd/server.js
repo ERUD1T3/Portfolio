@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
 	extended: false
 })) //middleware to parse data from request 
 
-app.use(express.static('/home/pi/Desktop/Portfolio/FrontEnd/')) //serves all the files in sign_up directory
+app.use(express.static('/home/pi/Desktop/WebPortfolio/FrontEnd/')) //serves all the files in sign_up directory
 
 app.use(morgan('short')) //use morgan to log request from/to server
 
