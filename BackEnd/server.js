@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
 	extended: false
 })) //middleware to parse data from request 
 
-app.use(express.static('/home/pi/Desktop/WebPortfolio/FrontEnd/')) //serves all the files in sign_up directory
+app.use(express.static('/home/pi/Desktop/WebStore/FrontEnd/')) //serves all the files in sign_up directory
 
 app.use(morgan('short')) //use morgan to log request from/to server
 
@@ -27,17 +27,17 @@ app.get("/", (req, res) => { //specified a routing function
 })
 
 app.post("/red_login", (req, res) => {
-	res.sendFile("/home/pi/Desktop/WebPortfolio/FrontEnd/login.html");
+	res.sendFile("/home/pi/Desktop/WebStore/FrontEnd/login.html");
 	console.log("rerouting to login");
 })
 
 app.get("/sign_up", (req, res) => {
-	res.sendFile("/home/pi/Desktop/WebPortfolio/FrontEnd/sign_up.html");
+	res.sendFile("/home/pi/Desktop/WebStore/FrontEnd/sign_up.html");
 	console.log("rerouting to signup");
 })
 
 app.post("/Data/first_classifier.py", (req, res) => {
-	res.download("home/pi/Desktop/WebPortfolio/Data/first_classifier.py");
+	res.download("home/pi/Desktop/WebStore/Data/first_classifier.py");
 	res.end();
 })
 
